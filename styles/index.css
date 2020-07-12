@@ -1,0 +1,57 @@
+body {
+    background-color: #ecf0f1;
+}
+.container {
+    width: 100%;
+}
+h1 {
+    margin: 35px auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 6px;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 22px;
+}
+.card {
+    width: 47%;
+    margin-bottom: 25px;
+    max-height: 350px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 3px 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card img {
+    width: 100%;
+}
+@media screen and (min-width: 940px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    h1 {
+        font-size: 27px;
+    }
+    .card {
+        width: 100%;
+    }
+}

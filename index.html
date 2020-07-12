@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estagiário's Portfolio</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Portfolio <span id="emoji"></span></h1>
+        <hr>
+        <div class="cards">
+
+            <div class="card">
+                <h2>Project 1</h2>
+                <img src="images/Classic - Dark _ Personal Portfolio WordPress Theme.jpg" alt="">
+            </div>
+            <div class="card">
+                <h2>Project 2</h2>
+                <img src="images/Clinique Nuage - Beauty Clinic Website.jpg" alt="">
+            </div>
+            <div class="card">
+                <h2>Project 3</h2>
+                <img src="images/Consuloan is clean and modern design PSD template….png" alt="">
+            </div>
+            <div class="card">
+                <h2>Project 4</h2>
+                <img src="images/Creative Design Agency Delhi, India _ Branding Agency Delhi.jpg" alt="">
+            </div>
+            <div class="card">
+                <h2>Project 5</h2>
+                <img src="images/Flourish Squarespace Kit — Station Seven_ Squarespace Templates, WordPress Themes, and Free Re.jpg" alt="">
+            </div>
+            <div class="card">
+                <h2>Project 6</h2>
+                <img src="images/Food Website Design.jpg" alt="">
+            </div>
+            <div class="card">
+                <h2>Project 7</h2>
+                <img src="images/Top 12 Web Design Trends 2020.png" alt="">
+            </div>
+            <div class="card">
+                <h2>Project 8</h2>
+                <img src="images/Webs con ilustraciones para tu inspiración _ MlMonferrer.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        function randomEmoji(){
+            const number = Math.random()
+            if(number < 0.2) return '😃'
+            if(number > 0.2 && number < 0.4) return '😍'
+            if(number > 0.4 && number < 0.6) return '🚀'
+            if(number > 0.6 && number < 0.8) return '❤️'
+            if(number > 0.8) return '👽'
+        }
+        document.getElementById('emoji').innerHTML = randomEmoji();
+        setInterval(function(){
+            document.getElementById('emoji').innerHTML = randomEmoji();
+        }, 1000)
+    </script>
+</body>
+</html>
